@@ -23,12 +23,12 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      data-theme="white"
     >
-      
+
       <body className="min-h-full flex flex-col">
-        <Header></Header>
-        <Navbar></Navbar>
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
